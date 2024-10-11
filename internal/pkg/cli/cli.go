@@ -11,7 +11,7 @@ func newCmdRoot() *cobra.Command {
 		},
 	}
 
-	rootCmd.AddCommand(newCmdConvert())
+	rootCmd.AddCommand(newCmdConvertHuman())
 	rootCmd.AddCommand(newCmdRemind())
 
 	return &rootCmd

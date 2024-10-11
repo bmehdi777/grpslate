@@ -9,7 +9,7 @@ import (
 
 func newCmdRemind() *cobra.Command {
 	remindCmd := cobra.Command{
-		Use:  "remind",
+		Use:  "reminder",
 		Run:  handlerRemind,
 		Args: cobra.NoArgs,
 	}
@@ -34,5 +34,4 @@ func handlerRemind(cmd *cobra.Command, args []string) {
 
 	fmt.Printf(" %s  %s  \n", userColor("|"), groupColor("Group's rights"))
 	fmt.Printf(" %s  \n", userColor("User's rights"))
-	fmt.Print("\n")
 }
